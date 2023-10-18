@@ -1,0 +1,88 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: #1c1c1c;
+}
+.name_logo a {
+  color: rgb(159, 145, 145);
+  text-decoration: none;
+  font-size: 1.7em;
+  font-style: italic;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu a {
+  color: rgb(208, 194, 194);
+  text-decoration: none;
+  font-size: 1.1em;
+  position: relative;
+}
+.menu div {
+  margin-right: 1em;
+}
+.menu a::after {
+  content: "";
+  background-color: rgb(227, 149, 149);
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  transition: width 1s;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+.fa-bars {
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+.menu_icon {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu_2 {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s;
+}
+.menu_2 div {
+  margin-top: 0.7em;
+}
+.menu_2 a {
+  color: rgb(208, 194, 194);
+  text-decoration: none;
+  font-size: 1.1em;
+  position: relative;
+}
+.menu_2 a::after {
+  content: "";
+  background-color: rgb(227, 149, 149);
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  transition: width 1s;
+}
+.menu_2 a:hover::after {
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .menu_icon {
+    position: static;
+    opacity: 1;
+    pointer-events: all;
+  }
+  .menu {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

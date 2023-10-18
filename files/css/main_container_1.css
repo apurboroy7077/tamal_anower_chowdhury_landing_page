@@ -1,0 +1,42 @@
+.main_container_1 {
+  width: 100%;
+  background-color: #3b3b3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+.img_div_main {
+  flex-basis: 40%;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_div_1 {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px black;
+  min-width: 17em;
+}
+.img_div_1 img {
+  width: 100%;
+}
+.text_div_1 {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text_div_1_1 {
+  font-size: 1.4em;
+  color: rgb(185, 176, 176);
+  text-align: center;
+}
+.text_div_1_2 {
+  font-size: 2em;
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
